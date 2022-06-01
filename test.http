@@ -3,3 +3,17 @@
 GET {{url}}/users
 
 ###
+GET {{url}}/users/11
+
+###
+
+POST {{url}}/users
+Content-Type: application/json
+
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "age": 11
+}
+###
+DELETE {{url}}/users/1
