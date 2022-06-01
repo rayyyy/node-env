@@ -1,4 +1,4 @@
-import * as express from 'express'
+import express from 'express'
 import * as bodyParser from 'body-parser'
 import { Request, Response } from 'express'
 import { AppDataSource } from './data-source'
@@ -50,7 +50,7 @@ AppDataSource.initialize()
     )
 
     await AppDataSource.manager.save(
-      dataSource.manager.create(User, {
+      AppDataSource.manager.create(User, {
         firstName: 'Phantom',
         lastName: 'Assassin',
         age: 24,
