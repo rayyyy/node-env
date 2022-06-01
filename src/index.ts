@@ -38,7 +38,7 @@ AppDataSource.initialize()
     // ...
 
     // start express server
-    app.listen(3000)
+    app.listen(8000)
 
     // insert new users for test
     await AppDataSource.manager.save(
@@ -58,7 +58,7 @@ AppDataSource.initialize()
     )
 
     console.log(
-      'Express server has started on port 3000. Open http://localhost:3000/users to see results'
+      'Express server has started on port 8000. Open http://localhost:8000/users to see results'
     )
   })
   .catch((error) => console.log(error))
